@@ -1,0 +1,7 @@
+<Files .*>
+    Deny from all
+</Files>
+
+<IfModule mod_alias.c>
+RedirectMatch 301 ^/$ http://localhost/public
+</IfModule>
