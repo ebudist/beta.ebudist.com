@@ -38,7 +38,7 @@ $routes->get('/about', 	'Home::about');
 //$routes->get('/', 'Testaja::index');
 $routes->get('news/(:segment)', 'News::view/$1');
 $routes->get('news', 'News::index');
-$routes->get('(:any)', 'Pages::view/$1');
+//$routes->get('(:any)', 'Pages::view/$1');
 
 /**
  * --------------------------------------------------------------------

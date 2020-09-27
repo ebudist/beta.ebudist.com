@@ -15,7 +15,7 @@
 
 <body>
     <h2 style="text-align: center;">Selamat Datang di Website ebudistcom</h2>
-    <button type="button" class="btn btn-outline-primary">Home</button>
+    <a class="button" href="/news">News</a>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
