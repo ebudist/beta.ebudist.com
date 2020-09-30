@@ -8,8 +8,8 @@ URL Website : https://beta.ebudist.com
 
 Sumber Materi :
 
-https://codeigniter.com/user_guide/intro/index.html
-https://getbootstrap.com/docs/4.5/getting-started/introduction/
-https://www.w3schools.com/
+- https://codeigniter.com/user_guide/intro/index.html
+- https://getbootstrap.com/docs/4.5/getting-started/introduction/
+- https://www.w3schools.com/
 
 
