@@ -36,6 +36,7 @@ $routes->get('/home', 'Home::index');
 $routes->get('/page', 'Page::index');
 $routes->get('/page', 'Page::about');
 $routes->get('/about', 	'Home::about');
+$routes->get('/produk', 'Home::produk');
 //$routes->get('/', 'Testaja::index');
 //$routes->get('news/(:segment)', 'News::view/$1');
 //$routes->get('news', 'News::index');

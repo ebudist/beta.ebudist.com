@@ -22,10 +22,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <div class="bg-image"></div>
     <div class="bg-text">
-        <h2>Selamat Datang</h2>
-        <h1 style="font-size:50px">Website ebudist.com (beta)</h1>
-        <a href="/about" class="btn btn-primary" role="button">Tentang ebudist.com</a>
-        <a href="/news" class="btn btn-primary" role="button">Berita Terbaru</a>
+        <img src="https://archive.ebudist.com/ebudistcom_mainlogo.png" height="132px" width="320px" title="Beta">
+        <h4>(Beta)</h4>
+        <a href="/about" class="btn btn-warning" role="button">Tentang ebudist.com</a>
+        <a href="/news" class="btn btn-info" role="button">Berita</a>
 
     </div>
     <style>

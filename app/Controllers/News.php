@@ -40,8 +40,9 @@ class News extends Controller
     {
         $model = new NewsModel();
 
+        //test pake validasi
         if ($this->request->getMethod() === 'post' && $this->validate([
-            'title' => 'required|min_length[3]|max_length[255]',
+            'title' => 'required|min_length[3]|max_length[30]',
             'body'  => 'required'
         ])) {
             $model->save([
@@ -52,9 +53,9 @@ class News extends Controller
 
             echo view('news/success');
         } else {
-            echo view('news/create', ['title' => 'Buat Artikel Baru']);
             echo view('templates/header');
             echo view('templates/footer');
+            echo view('news/create', ['title' => 'Buat Artikel Baru']);
         }
     }
 }

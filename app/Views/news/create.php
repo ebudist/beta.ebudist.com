@@ -27,6 +27,6 @@
         <label for="body"> Teks </label>
         <textarea name="body" class="form-control" rows="5" id="comment"></textarea><br />
     </div>
-    <button type="submit" input type="submit" name="submit" class="btn btn-default">Submit</button>
+    <button type="submit" input type="submit" name="submit" class="btn btn-warning">Submit</button>
 
 </form>

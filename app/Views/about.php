@@ -69,7 +69,6 @@
             /* Black w/opacity/see-through */
             color: white;
             font-weight: bold;
-            border: 3px solid #f1f1f1;
             position: absolute;
             top: 50%;
             left: 50%;
