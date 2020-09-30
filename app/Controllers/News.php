@@ -16,9 +16,9 @@ class News extends Controller
             'title' => 'News archive',
         ];
 
-        //    echo view('templates/header', $data);
+        echo view('templates/header', $data);
         echo view('news/overview', $data);
-        //    echo view('templates/footer', $data);
+        echo view('templates/footer', $data);
     }
     public function view($slug = NULL)
     {
@@ -32,8 +32,29 @@ class News extends Controller
 
         $data['title'] = $data['news']['title'];
 
-        //   echo view('templates/header', $data);
+        echo view('templates/header', $data);
         echo view('news/view', $data);
-        //   echo view('templates/footer', $data);
+        echo view('templates/footer', $data);
+    }
+    public function create()
+    {
+        $model = new NewsModel();
+
+        if ($this->request->getMethod() === 'post' && $this->validate([
+            'title' => 'required|min_length[3]|max_length[255]',
+            'body'  => 'required'
+        ])) {
+            $model->save([
+                'title' => $this->request->getPost('title'),
+                'slug'  => url_title($this->request->getPost('title'), '-', TRUE),
+                'body'  => $this->request->getPost('body'),
+            ]);
+
+            echo view('news/success');
+        } else {
+            echo view('news/create', ['title' => 'Buat Artikel Baru']);
+            echo view('templates/header');
+            echo view('templates/footer');
+        }
     }
 }
